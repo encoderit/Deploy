@@ -37,7 +37,7 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
-lock '3.7.2'
+#lock '3.7.2'
 
 set :application, 'contactbook'
 set :repo_url, 'git@github.com:encoderit/Deploy.git' # Edit this to match your repository

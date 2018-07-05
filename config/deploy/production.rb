@@ -6,8 +6,12 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-
-
+set :deploy_to, '/var/www/rails/ReArk-New'
+set :rails_env, 'production'
+set :application, 'admin_example'
+set :branch, 'master'
+# role :app, %w{deploy@104.37.188.213}
+role :app, %w{ubuntu@54.167.184.38}
 
 # role-based syntax
 # ==================
@@ -59,5 +63,3 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-
-server '54.167.184.38', user: 'deploy', roles: %w{web app db}
